@@ -11,8 +11,7 @@ class SearchBar extends Component {
 
   onFormSubmit = event => {
     event.preventDefault();
-
-    // Todo: make sure we use callback from parent component
+    this.props.onVideoSearch(this.state.term);
   };
 
   render() {
